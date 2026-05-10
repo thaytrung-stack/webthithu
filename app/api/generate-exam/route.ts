@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { model } from '@/lib/gemini';
-import { buildPrompt } from '@/lib/prompt';
+import { model } from '../../../../lib/gemini';
+import { buildPrompt } from '../../../../lib/prompt';
 
 export async function POST(req: NextRequest) {
   const { subject, grade, difficulty, sourceText } = await req.json();
